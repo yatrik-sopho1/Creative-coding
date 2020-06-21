@@ -5,9 +5,12 @@ function preload() {
   inconsolata = loadFont('Futura Classic W01 Bold.ttf');
 }
 function setup() {
-  createCanvas(windowWidth, windowHeight, WEBGL);
+
+  var canvas = createCanvas(windowWidth, windowHeight, WEBGL) ;
+  canvas.parent('sketch-holder');
+  //createCanvas(windowWidth, windowHeight, WEBGL);
   textFont(inconsolata);
-  textSize(100);
+  textSize(windowWidth/14);
   textAlign(CENTER, CENTER);
 
 }
@@ -49,7 +52,5 @@ function draw() {
 
 fill(255,255,255,100);
 ellipse(mouseX-windowWidth/2,mouseY-windowHeight/2,30,30);
-
-
 
 }
