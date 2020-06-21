@@ -1,5 +1,5 @@
 let x = 0;
-
+let ts;
 let inconsolata;
 function preload() {
   inconsolata = loadFont('Futura Classic W01 Bold.ttf');
@@ -10,7 +10,7 @@ function setup() {
   canvas.parent('sketch-holder');
   //createCanvas(windowWidth, windowHeight, WEBGL);
   textFont(inconsolata);
-  textSize(windowWidth/14);
+  ts =   textSize(windowWidth/10);
   textAlign(CENTER, CENTER);
 
 }
@@ -26,7 +26,7 @@ function draw() {
 
     fill(10,115,251);
     text('C R E A T I V E', 0,-80);
-  	text('C O D I N G', 0,15);
+  	text('C O D I N G', 0,50);
 
 
 
@@ -38,7 +38,7 @@ function draw() {
 
     fill(245,100,5);
     text('C R E A T I V E', 0,-80);
-  	text('C O D I N G', 0,15);
+  	text('C O D I N G', 0,50);
 
 
   let camXW = map(mouseX , 0, width, -40,40);
@@ -47,7 +47,7 @@ function draw() {
 
   fill(255);
   text('C R E A T I V E', 0,-80);
-  	text('C O D I N G', 0,15);
+  	text('C O D I N G', 0,50);
 
 
 fill(255,255,255,100);
