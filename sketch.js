@@ -10,8 +10,9 @@ function setup() {
   canvas.parent('sketch-holder');
   //createCanvas(windowWidth, windowHeight, WEBGL);
   textFont(inconsolata);
-  ts =   textSize(windowWidth/10);
+  ts =   textSize(windowWidth/15);
   textAlign(CENTER, CENTER);
+  noCursor();
 
 }
 
@@ -25,8 +26,8 @@ function draw() {
     camera(camXB,camYB,(height/2)/tan(PI/6),camXB,camYB,0,0,1,0);
 
     fill(10,115,251);
-    text('C R E A T I V E', 0,-80);
-  	text('C O D I N G', 0,50);
+    text('D O  N O T', 0,-80);
+  	text('M O V E', 0,20);
 
 
 
@@ -37,8 +38,8 @@ function draw() {
     camera(camX,camY,(height/2)/tan(PI/6),camX,camY,0,0,1,0);
 
     fill(245,100,5);
-    text('C R E A T I V E', 0,-80);
-  	text('C O D I N G', 0,50);
+    text('D O  N O T', 0,-80);
+  	text('M O V E', 0,20);
 
 
   let camXW = map(mouseX , 0, width, -40,40);
@@ -46,10 +47,10 @@ function draw() {
   camera(camXW,camYW,(height/2)/tan(PI/6),camXW,camYW,0,0,1,0);
 
   fill(255);
-  text('C R E A T I V E', 0,-80);
-  	text('C O D I N G', 0,50);
+  text('D O  N O T', 0,-80);
+  text('M O V E', 0,20);
 
-
+noStroke();
 fill(255,255,255,100);
 ellipse(mouseX-windowWidth/2,mouseY-windowHeight/2,30,30);
 
